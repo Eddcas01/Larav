@@ -16,7 +16,10 @@ Mostrar empleados
         @foreach($emp as $empl )
         <tr>
            <td>{{ $empl->id }}</td>
+
+           <img src="{{ asset('storage').'/'.empleado->Foto}} " alt="">
            <td>{{ $empl->Foto }}</td>
+
            <td>{{ $empl->Nombre }}</td>
            <td>{{ $empl->Nombre2 }}</td>
            <td>{{ $empl->Apellido2 }}</td>
